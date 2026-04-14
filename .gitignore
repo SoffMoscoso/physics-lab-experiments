@@ -15,6 +15,11 @@ env/
 # Jupyter NB Checkpoints
 .ipynb_checkpoints/
 
+# Model AI file
+*.h
+*.tflite
+*.keras
+
 # Mac OS-specific storage files
 .DS_Store
 
@@ -25,6 +30,12 @@ env/
 *.pdf
 *.docx
 
-!Difracción_y_estructura_de_elementos_ópticos_periódicos.pdf
-!Prelaboratorio#2-Informe.pdf
-!datos.xlsx
+# Accepting models in the ADVANCED-LAB-I/practice1-accelerometer-ai folder because they are 
+# very small and necessary for the practice.
+
+!ADVANCED-LAB-I/practice1-accelerometer-ai/**/*.keras
+!ADVANCED-LAB-I/practice1-accelerometer-ai/**/*.tflite
+!ADVANCED-LAB-I/practice1-accelerometer-ai/**/*.h
+
+# Environmental variables in Config file for Arduino
+ADVANCED-LAB-I/practice1-accelerometer-ai/scripts/arduino/DatabaseConnection/config.h
